@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/ensembl",
+  "title": "Ensembl",
+  "description": "Ensembl REST — vertebrate genomes, sequences, comparative genomics, variation",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/ensembl",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-ensembl",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/ensembl/mcp"
+    }
+  ]
+}
