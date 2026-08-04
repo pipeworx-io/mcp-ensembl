@@ -1,20 +1,23 @@
-# mcp-ensembl
+# @pipeworx/ensembl
 
-Ensembl REST MCP.
+[Ensembl](https://www.ensembl.org) REST API MCP — vertebrate genomes, gene annotations, sequences, comparative genomics, variation. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `lookup` | Lookup by stable id (gene/transcript/exon/translation). |
-| `lookup_symbol` | Gene by symbol within a species. |
-| `xrefs` | External cross-references for a gene symbol. |
-| `sequence` | Sequence by stable id. |
-| `homology` | Homology mappings for a gene. |
-| `variation` | Variation record by name. |
-| `vep` | Variant Effect Predictor — region in "chrom:start-end:strand" form. |
+- `lookup(id, expand?)` — by stable id (gene/transcript/exon/translation)
+- `lookup_symbol(species, symbol)` — gene by symbol within a species
+- `xrefs(species, symbol)` — external cross-references for a gene symbol
+- `sequence(id, type?)` — DNA / cDNA / CDS / protein sequence
+- `homology(species, symbol_or_id, target_species?)` — homology mappings
+- `variation(species, variant_id)` — variation by name (e.g. "rs56116432")
+- `vep(species, region, allele)` — Variant Effect Predictor (region: "9:22125504-22125504:1")
+- `xref_symbol(species, symbol)` — symbol lookup (alias for /xrefs/symbol)
+
+## Data source
+
+`https://rest.ensembl.org`
 
 ## Quick Start
 
@@ -30,7 +33,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -54,7 +57,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
