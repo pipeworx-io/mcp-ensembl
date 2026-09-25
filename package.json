@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ensembl",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Ensembl REST MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-fac749387068e947fc55ab9e3a39209c37d18d346dc7c1911d22ddedd2b4d0e8",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-67fef8dbe015130b2337d434ea8d44e8f9a4b3d78b4c06352a374b0c748949cc",
+    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
   }
 }
