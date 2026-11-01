@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ensembl",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Ensembl REST MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "ensembl",
     "gatewaySlug": "ensembl",
-    "sourceHash": "v1-00fe51a3c68466d1196b398cca8f728f5cb2c0c43f8047c1e363030d2ef2208c",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-0b742e2133747ed829a71da000d54adcc3390afacd84795d2870d1e98143ae27",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
